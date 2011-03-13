@@ -10,11 +10,11 @@ Varnish::CLI - An interface to the Varnish CLI
 
 =head1 VERSION
 
-Version::CLI 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 =head1 SYNOPSIS
@@ -241,12 +241,15 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Varnish
-
+    perldoc Varnish::CLI
 
 You can also look for information at:
 
 =over 4
+
+=item * Repository on Github
+
+L<https://github.com/robin13/Varnish-CLI>
 
 =item * RT: CPAN's request tracker
 
@@ -269,6 +272,7 @@ L<http://search.cpan.org/dist/Varnish/>
 
 =head1 ACKNOWLEDGEMENTS
 
+L<http://www.varnish-cache.org/>
 
 =head1 LICENSE AND COPYRIGHT
 
