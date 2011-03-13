@@ -43,40 +43,40 @@ Remember - complete contents of the secret file (including a newline if it exist
     
 =head1 PROPERTIES
 
-has host =>        ( is       => 'ro',
-                     isa      => 'Str',
-                     required => 1,
-                     default  => 'localhost' );
+    has host =>        ( is       => 'ro',
+                         isa      => 'Str',
+                         required => 1,
+                         default  => 'localhost' );
 
-has port =>        ( is       => 'ro',
-                     isa      => 'Int',
-                     required => 1,
-                     default  => 6082 );
+    has port =>        ( is       => 'ro',
+                         isa      => 'Int',
+                         required => 1,
+                         default  => 6082 );
 
-has timeout =>     ( is       => 'rw',
-                     isa      => 'Int',
-                     required => 1,
-                     default  => 1 );
+    has timeout =>     ( is       => 'rw',
+                         isa      => 'Int',
+                         required => 1,
+                         default  => 1 );
 
-has t =>           ( is       => 'rw',
-                     isa      => 'Net::Telnet',
-                     clearer  => 'clear_t' );
+    has t =>           ( is       => 'rw',
+                         isa      => 'Net::Telnet',
+                         clearer  => 'clear_t' );
                 
-has secret =>      ( is       => 'rw',
-                     isa      => 'Str' );
+    has secret =>      ( is       => 'rw',
+                         isa      => 'Str' );
 
-has connected =>   ( is       => 'rw',
-                     isa      => 'Int',
-                     default  => 0,
-                     required => 1 );
+    has connected =>   ( is       => 'rw',
+                         isa      => 'Int',
+                         default  => 0,
+                         required => 1 );
 
-has last_lines =>  ( is       => 'rw',
-                     isa      => 'ArrayRef',
-                     default  => sub{ [] } );
+    has last_lines =>  ( is       => 'rw',
+                         isa      => 'ArrayRef',
+                         default  => sub{ [] } );
 
-has last_status => ( is       => 'rw',
-                     isa      => 'Int',
-                    );
+    has last_status => ( is       => 'rw',
+                         isa      => 'Int',
+                        );
 
 =cut
 has host =>        ( is       => 'ro',
